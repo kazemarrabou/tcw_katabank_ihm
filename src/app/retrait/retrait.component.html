@@ -1,0 +1,12 @@
+<p>
+  Faire un retrait
+</p>
+<form [formGroup]="profileForm" (submit)="retrieve()">
+  <label>
+   Montant : <input id="amount" type="number" [formControlName]="amount" />
+  </label>
+  <label>
+  libelle : <input id="label" type="text" [formControlName]="libelle" />
+  </label>
+  <button type="submit" [disabled]="!profileForm.valid"> Valider </button>
+</form>

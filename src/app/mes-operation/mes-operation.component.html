@@ -1,0 +1,13 @@
+<p>
+  Mes operations
+</p>
+
+<ul>
+  <li *ngFor="let operation of operations">
+      <span>{{ operation.dateTransaction }}</span>
+      <span>:</span>
+      <span>{{ operation.libelle }}</span>
+      <span>:</span>
+      <span>{{ operation.amount }}</span>
+  </li>
+</ul>
