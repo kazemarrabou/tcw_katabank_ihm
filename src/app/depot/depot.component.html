@@ -1,0 +1,17 @@
+<p>
+  Faire un depot
+</p>
+<form [formGroup]="depotForm" (submit)="deposit()">
+  <div>
+    <label> Montant  : </label> 
+    <input id="amount" type="number" [formControlName]="amount" />
+ </div>
+ <div>
+  <label> libelle :  </label>
+  <input id="label" type="text" [formControlName]="libelle" />
+</div>
+  <button type="submit" [disabled]="!profileForm.valid"> Valider </button>
+</form>
+<nav>
+  <a routerLink="">Solde</a> <br>
+</nav>
