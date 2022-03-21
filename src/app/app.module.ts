@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { SoldeComponent } from './solde/solde.component';
 import { OperationService } from './services/operation.service';
+import { AccountStoreService } from './services/account-store.service';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { OperationService } from './services/operation.service';
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [OperationService],
+  providers: [OperationService,AccountStoreService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
